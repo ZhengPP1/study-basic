@@ -4,6 +4,7 @@ import com.bingbing.designpatterns.adapter.demo.ResultMsg;
 
 /**
  * ITarget角色
+ *
  * @author : bingbing
  */
 public interface IPassportForThird {

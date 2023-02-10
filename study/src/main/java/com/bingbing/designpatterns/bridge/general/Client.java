@@ -1,13 +1,22 @@
 package com.bingbing.designpatterns.bridge.general;
 
 /**
- * 桥接模式
+ * 桥接模式的通用写法
+ *
  * @author : bingbing
  */
 public class Client {
 
+
+    public static void main(String[] args) {
+        IImplementor concreteImplementorA = new ConcreteImplementorA();
+
+        Abstraction abstraction = new RefinedAbstraction(concreteImplementorA);
+        abstraction.operation();
+    }
+
     // 抽象
-    static abstract class Abstraction{
+    static abstract class Abstraction {
 
         protected IImplementor iImplementor;
 
@@ -15,14 +24,14 @@ public class Client {
             this.iImplementor = iImplementor;
         }
 
-        public void operation(){
+        public void operation() {
             this.iImplementor.operationImpl();
 
         }
     }
 
     // 修正抽象
-    static class RefinedAbstraction extends Abstraction{
+    static class RefinedAbstraction extends Abstraction {
 
         public RefinedAbstraction(IImplementor iImplementor) {
             super(iImplementor);
@@ -37,11 +46,11 @@ public class Client {
 
 
     // 抽象实现
-    interface IImplementor{
+    interface IImplementor {
         void operationImpl();
     }
 
-    static class ConcreteImplementorA implements IImplementor{
+    static class ConcreteImplementorA implements IImplementor {
 
         @Override
         public void operationImpl() {
@@ -49,7 +58,7 @@ public class Client {
         }
     }
 
-    static class ConcreteImplementorB implements IImplementor{
+    static class ConcreteImplementorB implements IImplementor {
 
         @Override
         public void operationImpl() {

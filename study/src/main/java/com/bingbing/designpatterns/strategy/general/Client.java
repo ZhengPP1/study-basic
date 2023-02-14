@@ -1,6 +1,7 @@
 package com.bingbing.designpatterns.strategy.general;
 
 /**
+ * 策略模式的通用写法
  * @author : bingbing
  */
 public class Client {

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * 支付策略管理类
  * @author : bingbing
  */
 public class PayStrategy {

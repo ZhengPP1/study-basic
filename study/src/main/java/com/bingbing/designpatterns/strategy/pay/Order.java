@@ -1,5 +1,8 @@
 package com.bingbing.designpatterns.strategy.pay;
 
+import com.bingbing.designpatterns.strategy.pay.payport.PayStrategy;
+import com.bingbing.designpatterns.strategy.pay.payport.Payment;
+
 /**
  * @author : bingbing
  */
@@ -16,6 +19,20 @@ public class Order {
         this.orderId = orderId;
         this.amount = amount;
     }
+
+
+    public MsgResult pay(){
+        return pay(PayStrategy.DEFAULT_PAY);
+    }
+
+    public MsgResult pay(String payKey){
+        Payment payment=PayStrategy.get(payKey);
+        System.out.println("欢迎使用" + payment.getName());
+        System.out.println("本次交易金额为" + amount + "，开始扣款");
+        return payment.pay(uid,amount);
+    }
+
+
 
 
 }

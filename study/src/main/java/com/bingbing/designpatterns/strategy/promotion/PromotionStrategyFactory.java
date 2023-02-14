@@ -19,6 +19,7 @@ public class PromotionStrategyFactory {
 
     public static final IPromotionStrategy EMPTY = new EmptyStrategy();
 
+
     public PromotionStrategyFactory() {
     }
 

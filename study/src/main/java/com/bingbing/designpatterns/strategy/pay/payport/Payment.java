@@ -3,7 +3,7 @@ package com.bingbing.designpatterns.strategy.pay.payport;
 import com.bingbing.designpatterns.strategy.pay.MsgResult;
 
 /**
- * 支付渠道
+ * 定义支付规范和支付逻辑
  */
 public abstract class Payment {
     public abstract String getName();

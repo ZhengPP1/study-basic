@@ -1,6 +1,8 @@
 package com.bingbing.designpatterns.chain.general;
 
 /**
+ * 责任链模式通用写法
+ *
  * @author : bingbing
  */
 public class Client {
@@ -8,7 +10,7 @@ public class Client {
     /**
      * 抽象处理者
      */
-    static abstract class Handler{
+    static abstract class Handler {
 
         protected Handler nextHandler;
 
@@ -22,14 +24,14 @@ public class Client {
     /**
      * 具体处理者A
      */
-    static class ConcreteHandlerA extends Handler{
+    static class ConcreteHandlerA extends Handler {
         @Override
         public void handlerRequest(String request) {
-            if ("requestA".equals(request)){
-                System.out.println(this.getClass().getSimpleName()+"deal with request:"+request);
+            if ("requestA".equals(request)) {
+                System.out.println(this.getClass().getSimpleName() + "deal with request:" + request);
                 return;
             }
-            if (this.nextHandler!=null){
+            if (this.nextHandler != null) {
                 this.nextHandler.handlerRequest(request);
             }
         }
@@ -39,19 +41,18 @@ public class Client {
     /**
      * 具体处理者B
      */
-    static class ConcreteHandlerB extends Handler{
+    static class ConcreteHandlerB extends Handler {
         @Override
         public void handlerRequest(String request) {
-            if ("requestB".equals(request)){
-                System.out.println(this.getClass().getSimpleName()+"deal with request:"+request);
+            if ("requestB".equals(request)) {
+                System.out.println(this.getClass().getSimpleName() + "deal with request:" + request);
                 return;
             }
-            if (this.nextHandler!=null){
+            if (this.nextHandler != null) {
                 this.nextHandler.handlerRequest(request);
             }
         }
     }
-
 
 
 }

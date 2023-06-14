@@ -3,6 +3,7 @@ package com.bingbing.designpatterns.chain.auth.builderchain;
 import com.bingbing.designpatterns.chain.auth.Member;
 
 /**
+ * 责任链模式和建造者模式结合使用
  * @author : bingbing
  */
 public abstract class Handler<T> {

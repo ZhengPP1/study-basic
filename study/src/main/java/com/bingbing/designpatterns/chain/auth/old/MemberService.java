@@ -4,6 +4,7 @@ import com.bingbing.designpatterns.chain.auth.Member;
 import org.springframework.util.StringUtils;
 
 /**
+ * 验证登录前的数据验证的普通写法
  * @author : bingbing
  */
 public class MemberService {

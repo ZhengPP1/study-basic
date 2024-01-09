@@ -1,10 +1,10 @@
 package com.bingbing.designpatterns.state.gper;
 
 /**
+ * 未登录状态
  * @author bingbing
  */
 public  class UnLoginState extends UserState{
-
 
     @Override
     public void favorite() {

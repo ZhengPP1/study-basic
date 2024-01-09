@@ -14,6 +14,7 @@ import org.springframework.statemachine.support.DefaultStateMachineContext;
 import java.util.EnumSet;
 
 /**
+ * 状态流转配置
  * @author bingbing
  */
 @Configuration

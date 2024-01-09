@@ -1,6 +1,7 @@
 package com.bingbing.designpatterns.state.order;
 
 /**
+ * 状态转换枚举类
  * @author bingbing
  */
 public enum OrderStatusChangeEvent {

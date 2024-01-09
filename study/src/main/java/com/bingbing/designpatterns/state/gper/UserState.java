@@ -1,6 +1,7 @@
 package com.bingbing.designpatterns.state.gper;
 
 /**
+ * 抽象状态角色
  * @author bingbing
  */
 public abstract class UserState {

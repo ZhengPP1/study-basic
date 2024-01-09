@@ -1,6 +1,7 @@
 package com.bingbing.designpatterns.state.order;
 
 /**
+ * 订单实体
  * @author bingbing
  */
 public class Order {

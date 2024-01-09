@@ -1,6 +1,7 @@
 package com.bingbing.designpatterns.state.gper;
 
 /**
+ * 登录状态
  * @author bingbing
  */
 public class LoginState extends UserState{

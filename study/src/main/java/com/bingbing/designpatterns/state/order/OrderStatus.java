@@ -1,6 +1,7 @@
 package com.bingbing.designpatterns.state.order;
 
 /**
+ * 订单状态枚举类
  * @author bingbing
  */
 public enum OrderStatus {

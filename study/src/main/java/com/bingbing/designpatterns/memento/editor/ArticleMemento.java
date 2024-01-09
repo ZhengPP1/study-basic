@@ -1,6 +1,7 @@
 package com.bingbing.designpatterns.memento.editor;
 
 /**
+ * 备忘录角色
  * @author bingbing
  */
 public class ArticleMemento {
